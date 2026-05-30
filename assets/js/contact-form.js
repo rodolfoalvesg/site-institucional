@@ -1,6 +1,3 @@
-/**
- * Formulário de contato — validação e feedback
- */
 function initContactForm() {
   const form = document.getElementById('contact-form');
   const feedback = document.getElementById('form-feedback');
@@ -19,6 +16,7 @@ function initContactForm() {
       showFeedback('⚠ Por favor, preencha todos os campos obrigatórios.', 'error');
       return;
     }
+
     if (!emailRegex.test(email)) {
       showFeedback('⚠ Informe um e-mail válido.', 'error');
       return;

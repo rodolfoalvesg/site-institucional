@@ -1,6 +1,3 @@
-/**
- * Navegação — destaca link ativo conforme seção visível
- */
 function initNavHighlight() {
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');

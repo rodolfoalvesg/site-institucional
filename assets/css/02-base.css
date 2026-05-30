@@ -1,6 +1,11 @@
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { 
+  box-sizing: border-box; 
+  margin: 0; padding: 0; 
+}
 
-html { scroll-behavior: smooth; }
+html { 
+  scroll-behavior: smooth; 
+}
 
 body {
   background: var(--bg);
@@ -9,7 +14,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ── NOISE OVERLAY ── */
 body::before {
   content: '';
   position: fixed;
@@ -20,8 +24,10 @@ body::before {
   opacity: 0.35;
 }
 
-/* ── SECTION BASE ── */
-section { padding: 7rem 4rem; position: relative; }
+section { 
+  padding: 7rem 4rem; 
+  position: relative; 
+}
 
 .section-tag {
   font-family: var(--font-mono);
@@ -52,9 +58,23 @@ h1 {
   animation: fadeUp 0.7s 0.35s forwards;
 }
 
-h1 .accent { color: var(--accent); }
-h1 .accent2 { color: var(--accent2); }
+h1 .accent { 
+  color: var(--accent); 
+}
 
-/* ── ACCESSIBILITY ── */
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
-.sr-only { position:absolute; width:1px; height:1px; clip:rect(0,0,0,0); overflow:hidden; }
+h1 .accent2 { 
+  color: var(--accent2); 
+}
+
+:focus-visible { 
+  outline: 2px solid var(--accent); 
+  outline-offset: 3px; 
+}
+
+.sr-only { 
+  position:absolute; 
+  width:1px; 
+  height:1px; 
+  clip:rect(0,0,0,0); 
+  overflow:hidden; 
+}

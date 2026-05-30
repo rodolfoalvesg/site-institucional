@@ -1,8 +1,6 @@
-/**
- * Scroll reveal — anima elementos ao entrar na viewport
- */
 function initScrollReveal() {
   const revealEls = document.querySelectorAll('.reveal');
+ 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
