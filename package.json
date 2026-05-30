@@ -1,0 +1,10 @@
+{
+  "name": "devlocal-solutions",
+  "version": "1.0.0",
+  "description": "Landing page DevLocal Solutions",
+  "private": true,
+  "scripts": {
+    "dev": "npx --yes serve . -p 3000",
+    "start": "npm run dev"
+  }
+}
